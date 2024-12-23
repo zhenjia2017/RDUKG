@@ -23,9 +23,11 @@ If you use this MKG, please cite:
 
 ## Deployment
 
- - Configure the JAVA environment. Jdk version needs to be 11 or above.
+ - Please contact [Zhen Jia](mailto:zjia@swjtu.edu.cn) for the neo4j with MKG data zip file "neo4j-community-3.5.11.zip".
 
- - Please contact [Zhen Jia](mailto:zjia@swjtu.edu.cn) for the neo4j with MKG data zip file "neo4j-community-3.5.11.zip" and unzip it. The data folder structure is as follows:
+ - Set up the Java environment by ensuring the JDK version is 11 or later.
+
+ - Unzip "neo4j-community-3.5.11.zip". 
 
  - Configure the neo4j environment.
 
@@ -35,7 +37,7 @@ If you use this MKG, please cite:
 
    (3) Add **%NEO4J_HOME%\bin** to path in the system variables.			 
 
- - After configuring the neo4j environment, test if you can successfully run MKG.
+ - After setting up the Neo4j environment, verify that MKG runs successfully.
 
    (1) Open cmd, input **neo4j.bat console**. The following output should be achieved.
 
@@ -53,7 +55,7 @@ If you use this MKG, please cite:
    2024-12-23 15:22:49.527+0000 INFO  Remote interface available at http://localhost:7474/
    ```
 
-   (2) Input http://localhost:7474 in your browser to check if the server is setup successfully.
+   (2) Input http://localhost:7474 in your browser to verify if the server is setup successfully.
 
 ## Feedback
 Any feedback is welcome! Please do not hesitate to contact us via mail: zjia@swjtu.edu.cn.
