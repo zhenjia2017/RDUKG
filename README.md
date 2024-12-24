@@ -29,7 +29,7 @@ Java environment with the JDK version 11 or later.
     ```
    drkg
     ```
-   If you have any issue with downloading, please contact [Zhen Jia](mail to:zjia@swjtu.edu.cn).
+   If you have any issue with downloading, please contact Zhen Jia via mail: zjia@swjtu.edu.cn.
 -  Unzip the data and put it in the *folder* for your configuration. The total data size is around 2 GB.
 
 ## Deployment
@@ -41,7 +41,7 @@ Java environment with the JDK version 11 or later.
 
     - Add **%NEO4J_HOME%\bin** to path in the system variables.
    
-    - Verify the Neo4j environment is setup successfully. Open cmd, input the follow command to start the Neo4j service:
+    - Verify the Neo4j environment is setup successfully. Open cmd, input the command to start the Neo4j service:
    
       ```
        neo4j.bat console
@@ -57,7 +57,7 @@ Java environment with the JDK version 11 or later.
       INFO  Remote interface available at http://localhost:7474/
       ```
  
-   - Input http://localhost:7474 in your browser to confirm if the Neo4j service is running and accessible.
+   - Input the URL **http://localhost:7474** in your browser to confirm if the Neo4j service is running and accessible.
    
   - Configure the Neo4j environment on Linux.
       
@@ -92,4 +92,4 @@ Java environment with the JDK version 11 or later.
 Any feedback is welcome! Please do not hesitate to contact us via mail: zjia@swjtu.edu.cn.
 
 ## License
-The MKG is licensed under [MIT license](LICENSE).
+The MKG project is licensed under [MIT license](LICENSE).
