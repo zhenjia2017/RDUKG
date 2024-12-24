@@ -98,7 +98,7 @@ Java environment with the JDK version 11 or later.
  
 ## MKG Usage Examples
 
-We provide a script **DrugReview.py** showing how to connect and retrieve the MKG to verify patient's medication safety based on rules as use cases. 
+We provide a script **[DrugReview.py](mkg_usage/DrugReview.py)** showing how to connect and retrieve the MKG to verify patient's medication safety based on rules as use cases. 
  - Requirement: `py2neo` package.
      ```
      install py2neo
