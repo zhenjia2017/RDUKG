@@ -26,9 +26,9 @@
 | 2  | "用药结果级别(treatment outcome level)"     | 248890  |
 | 3  | "规格(specification)"                   | 227834  |
 | 4  | "单次剂量(single dose)"                   | 120988  |
-| 5  | "药品(drug)"                            | 130962  |
+| 5  | "药品(drug)"                            | 113102  |
 | 6  | "频率(frequency)"                       | 112746  |
-| 7  | "成分(ingredient)"                      | 111024  |
+| 7  | "成分(ingredient)"                      | 128884  |
 | 8  | "致病因(cause of disease)"               | 93617   |
 | 9  | "发生率级别(incidence level)"              | 89564   |
 | 10 | "不良反应(adverse reaction)"              | 71154   |
