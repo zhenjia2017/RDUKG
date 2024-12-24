@@ -22,7 +22,7 @@ If you use this MKG, please cite:
 ```
 
 ## Evironment
-Java environment with the JDK version 11 or later.
+Java: OpenJDK-17
 
 ## Data
  - You need the MKG compressed file for deployment. We provide the MKG compressed file for deployment on Linux and Windows, respectively. You can choose one according to your requirements. 
