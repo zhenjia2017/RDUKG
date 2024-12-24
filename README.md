@@ -79,7 +79,12 @@ Java environment with the JDK version 11 or later.
        ```
        source /etc/environment
        ```
-     - Verify the Neo4j environment is setup successfully. Use **systemctl** to check if the Neo4j service is running:
+     - Verify if the environment variables are set correctly via the command as follows:
+       ```
+       echo $NEO4J_HOME
+       echo $PATH
+       ```
+     - Use **systemctl** to check if the Neo4j service is running:
        ```
        sudo systemctl status neo4j
        ```
@@ -87,7 +92,8 @@ Java environment with the JDK version 11 or later.
        ```
        sudo systemctl start neo4j
        ```
-
+     - Open a browser and navigate to **http://localhost:7474** to verify the accessibility of Neo4j service.
+    
 ## Feedback
 Any feedback is welcome! Please do not hesitate to contact us via mail: zjia@swjtu.edu.cn.
 
