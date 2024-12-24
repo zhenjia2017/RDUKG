@@ -101,7 +101,7 @@ Java environment with the JDK version 11 or later.
 We provide a script **[DrugReview.py](mkg_usage/DrugReview.py)** showing how to connect and retrieve the MKG to verify patient's medication safety based on rules as use cases. 
  - Requirement: `py2neo` package.
      ```
-     install py2neo
+     pip install py2neo
      ```
 
 - `query_database` function: call the run method on the graph object to execute a query in the MKG. The query statement is written in Cypher, which is a declarative graph query language used by Neo4j.
