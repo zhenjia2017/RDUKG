@@ -122,6 +122,12 @@ class DrugReviewSystem:
 
     # 重复用药审查
     def duplicate_drug_review(self, user_drugs):
+        '''
+        This method checks for potential duplicate or overlapping ingredients between different medications that a user might be taking.
+        :param user_drugs: IDs of drugs that patient will take, usually a list.
+        :return: a boolean value representing that if there are any duplicate components between any two drugs. If the boolean is False, return will be accompanied by a list of strings, each describing a pair of drugs and their shared components.
+
+        '''
         interactions = []
         drug_data = {}
         for drug in user_drugs:

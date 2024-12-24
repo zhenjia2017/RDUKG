@@ -66,6 +66,18 @@ This method checks for potential adverse reactions that a user might experience 
 
 Return a boolean value representing that if one or more of the drugs can potentially cause an adverse reaction related the diseases. If the boolean is False,  return will be accompanied by a list of formatted strings, each indicating which drug might lead to which adverse reaction.
 
+### `duplicate_drug_review` function
+
+**input**
+`user_drugs`: IDs of drugs that patient will take, usually a list.
+
+**Description:**
+
+This method checks for potential duplicate or overlapping ingredients between different medications that a user might be taking.
+
+**output:**
+
+Return a boolean value representing that if there are any duplicate components between any two drugs. If the boolean is False, return will be accompanied by a list of strings, each describing a pair of drugs and their shared components.
 
 
 ### `contraindication_review` function

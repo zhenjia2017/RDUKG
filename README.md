@@ -26,12 +26,12 @@ Java environment with the JDK version 11 or later.
 
 ## Data
  - You need the MKG compressed file for deployment. We provide the MKG compressed file for deployment on Linux and Windows, respectively. You can choose one according to your requirements. 
- - The MKG for deployment on Linux is at [link](https://pan.baidu.com/s/1dZ9e5j_qLoLS392MwHNq2A), for deployment on Windows is at [link](https://pan.baidu.com/s/1k80W9DweCK9LBiGqQthSxg). The extraction code is:
+ - The MKG for deployment on Linux is at [link](https://pan.baidu.com/s/1dZ9e5j_qLoLS392MwHNq2A), for deployment on Windows is at [link](https://pan.baidu.com/s/1gN16T6xQ7FPNKt49RDIIOA). The extraction code is:
     ```
    drkg
     ```
    If you have any issues with downloading dataset, please contact Zhen Jia via mail: zjia@swjtu.edu.cn. 
--  Unzip the data and put it in the */path/to/neo4j/* for your configuration. The total data size is around 2 GB.
+-  Unzip the data and put it in the */path/to/neo4j/* for your configuration. The total data size is around 3 GB.
 
 ## Deployment
 - Configure the Neo4j environment on Linux.
@@ -114,6 +114,9 @@ We provide a script **[DrugReview.py](mkg_usage/DrugReview.py)** showing how to 
 
 
 -  `adverse_reaction_review` function: check for potential adverse reactions that a user might experience based on the drugs they are taking and a disease that they are suffering.
+
+
+-  `duplicate_drug_review` function: check for potential duplicate or overlapping ingredients between different medications that a user might be taking.
 
 
 -  `contraindication_review` function: check for contraindications between a list of drugs that a patient is taking and a specified disease.
