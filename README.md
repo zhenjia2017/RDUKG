@@ -21,41 +21,72 @@ If you use this MKG, please cite:
 }
 ```
 
+## Evironment
+Java environment with the JDK version 11 or later.
+
+## Data
+ - You need the Neo4j medical knowledge graph data file ("neo4j-community-3.5.11.zip") for deployment. You can download from [here](https://pan.baidu.com/s/1UWaQqnZHuUMbbqeYY8kZuQ). The extraction code is:
+    ```
+   drkg
+    ```
+   If you have any issue with downloading, please contact [Zhen Jia](mail to:zjia@swjtu.edu.cn).
+-  Unzip the data and put it in the *folder* for your configuration. The total data size is around 2 GB.
+
 ## Deployment
+ - Configure the Neo4j environment on Windows.
+   
+    - This computer → Properties (R) → Advanced System Settings → Environment Variables
 
- - Please contact [Zhen Jia](mailto:zjia@swjtu.edu.cn) for the neo4j with MKG data zip file "neo4j-community-3.5.11.zip".
+    - Add variable **NEO4J_HOME** in the system variables, the value is the *folder* of the unzip data.
 
- - Set up the Java environment by ensuring the JDK version is 11 or later.
+    - Add **%NEO4J_HOME%\bin** to path in the system variables.
+   
+    - Verify the Neo4j environment is setup successfully. Open cmd, input the follow command to start the Neo4j service:
+   
+      ```
+       neo4j.bat console
+       ```
+   
+    - The output shows as follows if the service starts successfully.
 
- - Unzip "neo4j-community-3.5.11.zip". 
+      ```
+      INFO  ======== Neo4j 3.5.11 ========
+      INFO  Starting...
+      INFO  Bolt enabled on 127.0.0.1:7687.
+      INFO  Started.
+      INFO  Remote interface available at http://localhost:7474/
+      ```
+ 
+   - Input http://localhost:7474 in your browser to confirm if the Neo4j service is running and accessible.
+   
+  - Configure the Neo4j environment on Linux.
+      
+     - Edit the shell configuration file:
+       ```
+       sudo nano /etc/environment
+       ```
 
- - Configure the neo4j environment.
+     - Add a line to define the NEO4J_HOME variable. Replace **/path/to/neo4j** with the actual folder of Neo4j:
+       ```
+       export NEO4J_HOME=/path/to/neo4j
+       ```
 
-   (1) This computer → Properties (R) → Advanced System Settings → Environment Variables
-
-   (2) Add variable **NEO4J_HOME** in the system variables, the value is the unzip path.
-
-   (3) Add **%NEO4J_HOME%\bin** to path in the system variables.			 
-
- - After setting up the Neo4j environment, verify that MKG runs successfully.
-
-   (1) Open cmd, input **neo4j.bat console**. The following output should be achieved.
-
-   ```
-   2024-12-23 15:22:36.493+0000 WARN  You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 8, OpenJDK(TM) 8 or IBM J9.
-   2024-12-23 15:22:36.512+0000 INFO  ======== Neo4j 3.5.11 ========
-   2024-12-23 15:22:36.560+0000 INFO  Starting...
-   WARNING: An illegal reflective access operation has occurred
-   WARNING: Illegal reflective access by org.eclipse.collections.impl.utility.ArrayListIterate (file:/E:/neo4j-community-3.5.11/lib/eclipse-collections-9.2.0.jar) to field java.util.ArrayList.elementData
-   WARNING: Please consider reporting this to the maintainers of org.eclipse.collections.impl.utility.ArrayListIterate
-   WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
-   WARNING: All illegal access operations will be denied in a future release
-   2024-12-23 15:22:46.450+0000 INFO  Bolt enabled on 127.0.0.1:7687.
-   2024-12-23 15:22:48.384+0000 INFO  Started.
-   2024-12-23 15:22:49.527+0000 INFO  Remote interface available at http://localhost:7474/
-   ```
-
-   (2) Input http://localhost:7474 in your browser to verify if the server is setup successfully.
+     - Add **NEO4J_HOME/bin** to the PATH variable:
+       ```
+       export PATH=$NEO4J_HOME/bin:$PATH
+       ```
+     - Restart the shell or reboot the system:
+       ```
+       source /etc/environment
+       ```
+     - Verify the Neo4j environment is setup successfully. Use **systemctl** to check if the Neo4j service is running:
+       ```
+       sudo systemctl status neo4j
+       ```
+       If it says "active (running)", the service is up. If not, you can start it with:
+       ```
+       sudo systemctl start neo4j
+       ```
 
 ## Feedback
 Any feedback is welcome! Please do not hesitate to contact us via mail: zjia@swjtu.edu.cn.
