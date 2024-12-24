@@ -66,7 +66,7 @@ Java environment with the JDK version 11 or later.
        sudo nano /etc/environment
        ```
 
-     - Add a line to define the NEO4J_HOME variable. Replace **/path/to/neo4j** with the actual folder of Neo4j:
+     - Add a line to define the NEO4J_HOME variable. Replace **/path/to/neo4j** with the actual *folder* of Neo4j:
        ```
        export NEO4J_HOME=/path/to/neo4j
        ```
