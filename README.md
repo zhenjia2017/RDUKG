@@ -98,4 +98,4 @@ Java environment with the JDK version 11 or later.
 Any feedback is welcome! Please do not hesitate to contact us via mail: zjia@swjtu.edu.cn.
 
 ## License
-The MKG project is licensed under [MIT license](LICENSE).
+The MKG is licensed under [MIT license](LICENSE).
