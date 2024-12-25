@@ -18,26 +18,22 @@
 | 12   | "含量(content)"                                 | 105402  |
 | 13   | "用药频率(medication frequency)"                  | 58668   |
 
-### Type of Entities：17
+### Type of Entities：13
 
 |    | Entity                                | Number  |
 |----|---------------------------------------|---------|
-| 1  | "知识组(CVT)"                            | 2683885 |
-| 2  | "用药结果级别(treatment outcome level)"     | 248890  |
-| 3  | "规格(specification)"                   | 227834  |
-| 4  | "单次剂量(single dose)"                   | 120988  |
-| 5  | "药品(drug)"                            | 113102  |
+| 1  | "药品(drug)"                            | 113102  |
+| 2  | "人群(specific population)"             | 9172    |
+| 3  | "用药结果级别(treatment outcome level)"     | 248890  |
+| 4  | "规格(specification)"                   | 227834  |
+| 5  | "单次剂量(single dose)"                   | 120988  |
 | 6  | "频率(frequency)"                       | 112746  |
-| 7  | "成分(ingredient)"                      | 128884  |
+| 7  | "成分(ingredient)"                      | 17860  |
 | 8  | "致病因(cause of disease)"               | 93617   |
 | 9  | "发生率级别(incidence level)"              | 89564   |
-| 10 | "不良反应(adverse reaction)"              | 71154   |
-| 11 | "含量(content)"                         | 56084   |
-| 12 | "病症(disease)"                         | 32839   |
-| 13 | "作用结果级别(effect outcome level)"        | 29478   |
-| 14 | "人群(specific population)"             | 9172    |
-| 15 | "给药途径(administration route)"          | 1585    |
-| 16 | "发生率(incidence)"                      | 80      |
-| 17 | "用药频率(medication frequency)"          | 25      |
+| 10 | "含量(content)"                         | 56084   |
+| 11 | "病症(disease)"                         | 32839   |
+| 12 | "作用结果级别(effect outcome level)"        | 29478   |
+| 13 | "给药途径(administration route)"          | 1585    |
 
 ### 
