@@ -1,11 +1,12 @@
 from py2neo import Graph
 import itertools
 import re
+import logging
 
 
 class DrugReviewSystem:
-    def __init__(self, uri):
-        self.graph = Graph(uri)
+    def __init__(self, uri, auth):
+        self.graph = Graph(uri, auth=auth)
 
     def close(self):
         self.graph.disconnect()
@@ -294,8 +295,17 @@ class DrugReviewSystem:
 
 
 if __name__ == "__main__":
-    uri = "http://localhost:7474"
-    system = DrugReviewSystem(uri)
+    #uri = "http://localhost:7474"
+    uri = "bolt://localhost:7687"
+    user = "neo4j"
+    password = "neo4j"
+    #new_password = "explaindr"
+    name = "neo4j"
+    logging.basicConfig(level=logging.DEBUG)
+    system = DrugReviewSystem(uri, (user, password))
+    #query = f"ALTER CURRENT USER SET PASSWORD FROM '{old_password}' to '{new_password}'"
+    #system.graph.run(query)
+    print("Password updated successfully!")
     user_drugs = [41445, 85711, 86834, 3308407, 3308407, 2981834]
     # user_drugs = ["氯雷他定片", "氨茶碱缓释片", "氧氟沙星氯化钠注射液", "复方妥英麻黄茶碱片", "丙硫异烟胺肠溶片"]
     user_drugs2 = ['来氟米特片']

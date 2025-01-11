@@ -22,18 +22,28 @@ If you use this MKG, please cite:
 ```
 
 ## Evironment
-Java: OpenJDK-17
+Java: Jdk version needs to be 11 or above, e.g., OpenJDK-17.
 
 ## Data
  - You need the MKG compressed file for deployment. We provide the MKG compressed file for deployment on Linux and Windows, respectively. You can choose one according to your requirements. 
- - The MKG for deployment on Linux is at [link](https://pan.baidu.com/s/1dZ9e5j_qLoLS392MwHNq2A), for deployment on Windows is at [link](https://pan.baidu.com/s/1gN16T6xQ7FPNKt49RDIIOA). The extraction code is:
-    ```
-   drkg
-    ```
-   If you have any issues with downloading dataset, please contact Zhen Jia via mail: zjia@swjtu.edu.cn. 
--  Unzip the data and put it in the */path/to/neo4j/* for your configuration. The total data size is around 3 GB.
+ - The MKG for deployment on Linux is at [link](https://drive.google.com/file/d/19HMFE68t-6-hzyNUzKR71WP5CctP6cXN/view?usp=drive_link), for deployment on Windows is at [link](https://drive.google.com/file/d/1i0Go1ZaJp9Oy7GIqhnToxylw0zAkpPVe/view?usp=drive_link). 
+If you have any issues with downloading dataset, please contact Zhen Jia via mail: zjia@swjtu.edu.cn. 
+-  put the data in the */path/to/graph.dump/* for your configuration. The total data size is around 3 GB.
 
 ## Deployment
+- Follow the instructions at [link](https://neo4j.com/docs/operations-manual/5/installation/) to install Neo4J (We provide the instruction on Debian and Debian-based Linux systems.
+Adding the Debian repository
+```
+wget -O - https://debian.neo4j.com/neotechnology.gpg.key | sudo apt-key add -
+echo 'deb https://debian.neo4j.com stable latest' | sudo tee /etc/apt/sources.list.d/neo4j.list
+sudo apt-get update
+```
+
+To install Neo4j Community Edition:
+```
+sudo apt-get install neo4j
+```
+- 
 - Configure the Neo4j environment on Linux.
       
      - Navigate to the Neo4j bin directory:
@@ -42,7 +52,7 @@ Java: OpenJDK-17
        ```
      - Start the Neo4j service:
        ```
-       ./neo4j start
+       neo4j start
        ``` 
      - If the service successfully started, you will see the similar output:
        ```      
@@ -63,11 +73,11 @@ Java: OpenJDK-17
        ``` 
     - You can use the following command to confirm whether the service is running: 
       ```
-       ./neo4j status
+       neo4j status
       ``` 
     - You will see the similar output if the service is running:     
       ``` 
-      Neo4j is running at pid 150
+      Neo4j is running at pid 101291
       ``` 
  - Configure the Neo4j environment on Windows.
    
