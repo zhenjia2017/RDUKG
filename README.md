@@ -25,9 +25,9 @@ If you use this MKG, please cite:
 Java: The JDK version needs to be 11 or above, e.g., OpenJDK-17.
 
 ## Data
- - The MKG dump for deployment is at [Google Drive](https://drive.google.com/file/d/16blaKOpGwT-NruhDKwwqOktkwhCYBAbl/view?usp=drive_link). The total data size is around 1 GB. 
- - If you have any issues downloading the MKG dump, please contact Zhen Jia via mail: zjia@swjtu.edu.cn. 
-
+ - The MKG dump for deployment is at [Google Drive](https://drive.google.com/file/d/16blaKOpGwT-NruhDKwwqOktkwhCYBAbl/view?usp=drive_link).
+ - The total data size is around 1 GB. 
+ 
 ## Deployment
 - Follow the instructions at [link](https://neo4j.com/docs/operations-manual/5/installation/) to install Neo4J (We provide the instructions on Debian and Debian-based Linux systems).
 
@@ -47,7 +47,8 @@ Java: The JDK version needs to be 11 or above, e.g., OpenJDK-17.
 
   -    Confirm if the Neo4j service is running and accessible, input the URL ** http://localhost:7474 ** in your browser.
       
- 
+  -    If you have any issues downloading or deploying the MKG, please contact Zhen Jia via mail: zjia@swjtu.edu.cn. 
+
 ## MKG Usage Examples
 
 We provide a script **[DrugReview.py](mkg_usage/DrugReview.py)** that shows how to connect to and retrieve the MKG to verify a patient's medication safety based on rules and use cases. 
