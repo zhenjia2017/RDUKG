@@ -45,7 +45,7 @@ Java: The JDK version needs to be 11 or above, e.g., OpenJDK-17.
 
   -    Put the MKG dump in the */path/to/graph.dump/* for your configuration. 
 
-  To confirm if the Neo4j service is running and accessible, input the URL ** http://localhost:7474 ** in your browser.
+  -    Confirm if the Neo4j service is running and accessible, input the URL ** http://localhost:7474 ** in your browser.
       
  
 ## MKG Usage Examples
