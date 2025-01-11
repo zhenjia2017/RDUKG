@@ -47,7 +47,6 @@ Java: The JDK version needs to be 11 or above, e.g., OpenJDK-17.
 
   -    Confirm if the Neo4j service is running and accessible, input the URL ** http://localhost:7474 ** in your browser.
       
-  -    If you have any issues downloading or deploying the MKG, please contact Zhen Jia via mail: zjia@swjtu.edu.cn. 
 
 ## MKG Usage Examples
 
@@ -85,7 +84,7 @@ We provide a script **[DrugReview.py](mkg_usage/DrugReview.py)** that shows how 
 
 
 ## Feedback
-Any feedback is welcome! Please do not hesitate to contact us via mail: zjia@swjtu.edu.cn.
+Any feedback is welcome! If you have any issues downloading or deploying the MKG, please do not hesitate to contact us via mail: zjia@swjtu.edu.cn.
 
 ## License
 The MKG is licensed under [MIT license](LICENSE).
