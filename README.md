@@ -37,7 +37,6 @@ Java: The JDK version needs to be 11 or above, e.g., OpenJDK-17.
   echo 'deb https://debian.neo4j.com stable latest' | sudo tee /etc/apt/sources.list.d/neo4j.list
   sudo apt-get update
   ```
-  -    Adding the Debian repository
 
   -    Install Neo4j Community Edition:
   ```
