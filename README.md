@@ -25,86 +25,28 @@ If you use this MKG, please cite:
 Java: Jdk version needs to be 11 or above, e.g., OpenJDK-17.
 
 ## Data
- - You need the MKG compressed file for deployment. We provide the MKG compressed file for deployment on Linux and Windows, respectively. You can choose one according to your requirements. 
- - The MKG for deployment on Linux is at [link](https://drive.google.com/file/d/19HMFE68t-6-hzyNUzKR71WP5CctP6cXN/view?usp=drive_link), for deployment on Windows is at [link](https://drive.google.com/file/d/1i0Go1ZaJp9Oy7GIqhnToxylw0zAkpPVe/view?usp=drive_link). 
-If you have any issues with downloading dataset, please contact Zhen Jia via mail: zjia@swjtu.edu.cn. 
--  put the data in the */path/to/graph.dump/* for your configuration. The total data size is around 3 GB.
+ - The MKG dump for deployment is at [Google drive](https://drive.google.com/file/d/16blaKOpGwT-NruhDKwwqOktkwhCYBAbl/view?usp=drive_link). The total data size is around 1 GB. 
+ - If you have any issues with downloading dataset, please contact Zhen Jia via mail: zjia@swjtu.edu.cn. 
 
-## Deployment
-- Follow the instructions at [link](https://neo4j.com/docs/operations-manual/5/installation/) to install Neo4J (We provide the instruction on Debian and Debian-based Linux systems.
-Adding the Debian repository
-```
-wget -O - https://debian.neo4j.com/neotechnology.gpg.key | sudo apt-key add -
-echo 'deb https://debian.neo4j.com stable latest' | sudo tee /etc/apt/sources.list.d/neo4j.list
-sudo apt-get update
-```
+- Follow the instructions at [link](https://neo4j.com/docs/operations-manual/5/installation/) to install Neo4J (We provide the instruction on Debian and Debian-based Linux systems).
 
-To install Neo4j Community Edition:
-```
-sudo apt-get install neo4j
-```
-- 
-- Configure the Neo4j environment on Linux.
+  -    Adding the Debian repository
+  ```
+  wget -O - https://debian.neo4j.com/neotechnology.gpg.key | sudo apt-key add -
+  echo 'deb https://debian.neo4j.com stable latest' | sudo tee /etc/apt/sources.list.d/neo4j.list
+  sudo apt-get update
+  ```
+  -    Adding the Debian repository
+
+  -    Install Neo4j Community Edition:
+  ```
+  sudo apt-get install neo4j
+  ```
+
+  -    Put the MKG dump in the */path/to/graph.dump/* for your configuration. 
+
+  -    Input the URL **http://localhost:7474** in your browser to confirm if the Neo4j service is running and accessible.
       
-     - Navigate to the Neo4j bin directory:
-       ```
-       cd /path/to/neo4j/bin
-       ```
-     - Start the Neo4j service:
-       ```
-       neo4j start
-       ``` 
-     - If the service successfully started, you will see the similar output:
-       ```      
-        Active database: graph.db
-        Directories in use:
-          home:         /usr/local/neo4j/neo4j-community-3.5.11
-          config:       /usr/local/neo4j/neo4j-community-3.5.11/conf
-          logs:         /usr/local/neo4j/neo4j-community-3.5.11/logs
-          plugins:      /usr/local/neo4j/neo4j-community-3.5.11/plugins
-          import:       /usr/local/neo4j/neo4j-community-3.5.11/import
-          data:         /usr/local/neo4j/neo4j-community-3.5.11/data
-          certificates: /usr/local/neo4j/neo4j-community-3.5.11/certificates
-          run:          /usr/local/neo4j/neo4j-community-3.5.11/run
-        Starting Neo4j.
-        Started neo4j (pid 150). It is available at http://0.0.0.0:7474/
-        There may be a short delay until the server is ready.
-        See /usr/local/neo4j/neo4j-community-3.5.11/logs/neo4j.log for current status.
-       ``` 
-    - You can use the following command to confirm whether the service is running: 
-      ```
-       neo4j status
-      ``` 
-    - You will see the similar output if the service is running:     
-      ``` 
-      Neo4j is running at pid 101291
-      ``` 
- - Configure the Neo4j environment on Windows.
-   
-    - This computer → Properties (R) → Advanced System Settings → Environment Variables
-
-    - Add variable **NEO4J_HOME** in the system variables, the value is the *folder* of the unzip data.
-
-    - Add **%NEO4J_HOME%\bin** to path in the system variables.
-   
-    - Verify the Neo4j environment is setup successfully. Open cmd, input the command to start the Neo4j service:
-   
-      ```
-       neo4j.bat console
-       ```
-   
-    - The output shows as follows if the service starts successfully.
-
-      ```
-      INFO  ======== Neo4j 3.5.11 ========
-      INFO  Starting...
-      INFO  Bolt enabled on 127.0.0.1:7687.
-      INFO  Started.
-      INFO  Remote interface available at http://localhost:7474/
-      ```
- 
-   - Input the URL **http://localhost:7474** in your browser to confirm if the Neo4j service is running and accessible.
-   
  
 ## MKG Usage Examples
 
