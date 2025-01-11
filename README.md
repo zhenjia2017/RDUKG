@@ -21,15 +21,15 @@ If you use this MKG, please cite:
 }
 ```
 
-## Evironment
-Java: Jdk version needs to be 11 or above, e.g., OpenJDK-17.
+## Requirements
+Java: The JDK version needs to be 11 or above, e.g., OpenJDK-17.
 
 ## Data
- - The MKG dump for deployment is at [Google drive](https://drive.google.com/file/d/16blaKOpGwT-NruhDKwwqOktkwhCYBAbl/view?usp=drive_link). The total data size is around 1 GB. 
- - If you have any issues with downloading dataset, please contact Zhen Jia via mail: zjia@swjtu.edu.cn. 
+ - The MKG dump for deployment is at [Google Drive](https://drive.google.com/file/d/16blaKOpGwT-NruhDKwwqOktkwhCYBAbl/view?usp=drive_link). The total data size is around 1 GB. 
+ - If you have any issues downloading the dataset, please contact Zhen Jia via mail: zjia@swjtu.edu.cn. 
 
 ## Deployment
-- Follow the instructions at [link](https://neo4j.com/docs/operations-manual/5/installation/) to install Neo4J (We provide the instruction on Debian and Debian-based Linux systems).
+- Follow the instructions at [link](https://neo4j.com/docs/operations-manual/5/installation/) to install Neo4J (We provide the instructions on Debian and Debian-based Linux systems).
 
   -    Adding the Debian repository
   ```
@@ -46,39 +46,39 @@ Java: Jdk version needs to be 11 or above, e.g., OpenJDK-17.
 
   -    Put the MKG dump in the */path/to/graph.dump/* for your configuration. 
 
-  -    Input the URL **http://localhost:7474** in your browser to confirm if the Neo4j service is running and accessible.
+  To confirm if the Neo4j service is running and accessible, input the URL ** http://localhost:7474 ** in your browser.
       
  
 ## MKG Usage Examples
 
-We provide a script **[DrugReview.py](mkg_usage/DrugReview.py)** showing how to connect and retrieve the MKG to verify patient's medication safety based on rules as use cases. 
+We provide a script **[DrugReview.py](mkg_usage/DrugReview.py)** that shows how to connect to and retrieve the MKG to verify a patient's medication safety based on rules and use cases. 
  - Requirement: `py2neo` package.
      ```
      pip install py2neo
      ```
 
-- `query_database` function: call the run method on the graph object to execute a query in the MKG. The query statement is written in Cypher, which is a declarative graph query language used by Neo4j.
+- `query_database` function: call the run method on the graph object to execute a query in the MKG. The query statement is written in Cypher, a declarative graph query language used by Neo4j.
 
 
-- `drug_interactions` function: check for potential interactions between a set of drugs that a patient might be taking by using the DDI knowledge in the MKG.
+- `drug_interactions` function: check for potential interactions between a set of drugs a patient might take by using the DDI knowledge in the MKG.
 
 
-- `allergy_review` function: check if there are any allergens in the drugs a user is taking.
+- `allergy_review` function: check for any allergens in the drugs a user takes.
 
 
 -  `adverse_reaction_review` function: check for potential adverse reactions that a user might experience based on the drugs they are taking and a disease that they are suffering.
 
 
--  `duplicate_drug_review` function: check for potential duplicate or overlapping ingredients between different medications that a user might be taking.
+-  `duplicate_drug_review` function: check for potential duplicate or overlapping ingredients between different medications a user might be taking.
 
 
 -  `contraindication_review` function: check for contraindications between a list of drugs that a patient is taking and a specified disease.
 
 
--  `age_review` function: review whether the drugs a patient is taking are suitable for their age.
+-  `age_review` function: review whether the drugs a patient takes suit their age.
 
 
--  `special_population_review`: review whether the drugs a patient is taking are suitable for special populations, such as pregnant women, children, elderly people, or those with specific medical conditions.
+-  `special_population_review`: review whether the drugs a patient takes suit special populations, such as pregnant women, children, elderly people, or those with specific medical conditions.
 
 
 -  `method_review` function: review whether the methods for the drugs a patient is taking are correct.
