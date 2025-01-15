@@ -143,9 +143,9 @@ sudo neo4j start
 
 ### APOC
 
-APOC (Awesome Procedures on Cypher) is an add-on library for Neo4j that provides hundreds of procedures and functions adding a lot of useful functionality. You can find more information in [here](https://neo4j.com/labs/apoc/).
+- APOC (Awesome Procedures on Cypher) is an add-on library for Neo4j that provides hundreds of procedures and functions adding a lot of useful functionality. You can find more information in [here](https://neo4j.com/labs/apoc/).
 
-APOC can be installed by moving the APOC jar file from the `$NEO4J_HOME/labs` directory to the `$NEO4J_HOME/plugins` directory and restarting Neo4j.
+- APOC can be installed by moving the APOC jar file from the `$NEO4J_HOME/labs` directory to the `$NEO4J_HOME/plugins` directory and restarting Neo4j.
 
 
 
