@@ -21,16 +21,16 @@ If you use this MKG, please cite:
 }
 ```
 
-# MKG Data
+## MKG Data
  - The MKG dump for deployment is at [Google Drive](https://drive.google.com/file/d/16blaKOpGwT-NruhDKwwqOktkwhCYBAbl/view?usp=drive_link).
  - The total data size is around 1 GB.
 
-# Linux installation(Ubuntu)
+## Linux installation(Ubuntu)
 
 This is an operational manual for deploying Neo4j on Ubuntu. If you want to learn more information or deploy it on other systems, you can refer to [here](https://neo4j.com/docs/operations-manual/current/installation/linux/).
 
 
-## Java prerequisites
+### Java prerequisites
 
 Neo4j 5 requires the Java 17 runtime.
 
@@ -60,7 +60,7 @@ java -version
 
 
 
-##  Installation
+###  Installation
 
 1.To use the repository for generally available versions of Neo4j, run:
 
@@ -92,7 +92,7 @@ sudo neo4j {start|stop|restart}
 
 
 
-## Start Neo4j
+### Start Neo4j
 
 1.Modify the configuration file, located at `/etc/neo4j/neo4j.conf`:
 
@@ -112,7 +112,7 @@ sudo neo4j restart
 
 
 
-## Import database
+### Import database
 
 1.Stop neo4j service:
 
@@ -141,7 +141,7 @@ sudo neo4j start
 
 
 
-## APOC
+### APOC
 
 APOC (Awesome Procedures on Cypher) is an add-on library for Neo4j that provides hundreds of procedures and functions adding a lot of useful functionality. You can find more information in [here](https://neo4j.com/labs/apoc/).
 
