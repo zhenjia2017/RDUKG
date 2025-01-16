@@ -152,9 +152,9 @@ sudo neo4j start
 ## MKG Usage Examples
 
 We provide a script **[drug_review_system.py](mkg_usage/drug_review_system.py)** that shows how to connect to and retrieve the MKG to verify a patient's medication safety based on rules and use cases. 
- - Requirement: `py2neo` package.
+ - Requirement: `neo4j` package.
      ```
-     pip install py2neo
+     pip install neo4j
      ```
 
 - `query_database` function: call the run method on the graph object to execute a query in the MKG. The query statement is written in Cypher, a declarative graph query language used by Neo4j.
