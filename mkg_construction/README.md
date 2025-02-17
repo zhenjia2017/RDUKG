@@ -1,4 +1,5 @@
 ## MKG Information Statistics
+  The statistics only contain the important domain relations and entities. 
 ### No. Triples: 6,620,073 
 ### Type of Relations：13
 
@@ -23,17 +24,15 @@
 |    | Entity                                | Number  |
 |----|---------------------------------------|---------|
 | 1  | "药品(drug)"                            | 113102  |
-| 2  | "人群(specific population)"             | 9172    |
+| 2  | "人群(specific population)"             | 571974    |
 | 3  | "用药结果级别(treatment outcome level)"     | 248890  |
 | 4  | "规格(specification)"                   | 227834  |
 | 5  | "单次剂量(single dose)"                   | 120988  |
 | 6  | "频率(frequency)"                       | 112746  |
-| 7  | "成分(ingredient)"                      | 17860  |
+| 7  | "成分(ingredient)"                      | 111018  |
 | 8  | "致病因(cause of disease)"               | 93617   |
 | 9  | "发生率级别(incidence level)"              | 89564   |
 | 10 | "含量(content)"                         | 56084   |
-| 11 | "病症(disease)"                         | 32839   |
+| 11 | "病症(disease)"                         | 1486342   |
 | 12 | "作用结果级别(effect outcome level)"        | 29478   |
 | 13 | "给药途径(administration route)"          | 1585    |
-
-### 
